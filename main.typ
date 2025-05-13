@@ -11,16 +11,18 @@
 )
 
 
-#outline(depth: 1)
+#outline(depth: none)
 
-// Lecture 1
-#include "sections/intromotivation.typ"
-// Lecture 2
-#include "sections/pca-intro.typ"
-// Lecture 3
-#include "sections/least-sqares-esimators.typ"
-// Lecture 4
-#include "sections/statistical-performance-indexes.typ"
-// Lecture 5
+// Intro and
+#include "sections/Lecture 1.typ"
+// PCA intro
+#include "sections/Lecture 2.typ"
+// Least squares estimators
+#include "sections/Lecture 3.typ"
+// Statistical performance indexes
+#include "sections/Lecture 4.typ"
+// Maximum likelihood
+#include "sections/Lecture 5.typ"
+
 
 #include "sections/qa.typ"
