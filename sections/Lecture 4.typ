@@ -170,7 +170,7 @@ The formula for SSIM is:
 Intersection over Union (IoU) is a metric used to evaluate the performance of an object detection model. It measures the overlap between the predicted bounding box and the ground truth bounding box.
 The formula for IoU is:
 #definition("IoU")[
-  $ "IoU" = ("Area of overlap")/("Area of union") = T P/(T P + F P + F N) $
+  $ "IoU" = ("Area of overlap")/("Area of union") = (T P)/(T P + F P + F N) $
   - Area of overlap = area of the intersection between the predicted and ground truth bounding boxes
   - Area of union = area of the union between the predicted and ground truth bounding boxes
 ]

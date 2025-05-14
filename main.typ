@@ -25,4 +25,4 @@
 #include "sections/Lecture 5.typ"
 
 
-#include "sections/qa.typ"
+#include "sections/QA-exam.typ"
