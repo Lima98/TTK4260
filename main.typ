@@ -24,5 +24,8 @@
 // Maximum likelihood
 #include "sections/Lecture 5.typ"
 
+// ANN/CNN
+#include "sections/Lecture 25.typ"
+
 
 #include "sections/QA-exam.typ"
