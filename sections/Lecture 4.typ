@@ -1,7 +1,7 @@
 #import "@preview/dvdtyp:1.0.1": *
 
 
-= Statistical performance indexes
+= Statistical performance indexes (Lecture 4)
 
 There are three measures of central tendencies, they are *mode*, *median* and *mean*.
 

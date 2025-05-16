@@ -2,33 +2,43 @@
 #import "@preview/lilaq:0.2.0" as lq
 
 #pagebreak()
-= Maximum likelihood
+= Maximum likelihood (Lecture 5)
 *Why something more than least squares?*\
 - (I.e., why do we introduce maximum likelihood estimators?)\
 *answer*: to include information about the statistical distribution of the measurement\ noise (and also to facilitate quantification of uncertainties)\
 *caveat*: by extending LS into ML, we “inject” assumptions. If the assumptions are good then ok, if they are bad then “not so ok”
 
-== Types of probability distributions
+== Types of probability distributions <typ>
 #grid(
   columns: 2,
 example()[
+  #grid(
+    columns: 2,
+    [
   - Uniform
   - Exponential
   - Poisson
-  - Gamma
+  - Gamma,
+    ],[
   - Beta
   - Binomial
   - Log-normal
   - Normal
+    ]
+)
 ],
-"Below you can see all the definitions of the distributions. See Definition 5.1.1--5.1.6. And on the following page they have all been visualized in the form of figures. See "
+[
+  === Info
+   Below you can see all the definitions of the distributions. See @def-uniform\--@def-normal[] And on #ref(<plot:uniform>,form: "page") they have all been visualized in the form of figures.
+   ]
 )
 #grid(columns: 2,
       gutter: 0.3cm,
-  grid.cell(
-  definition("Uniform")[
-    $ f(x|a,b) = cases(1/(b-a) quad &"if a" <= x <= b,0 &"otherwise") $
-  ]),
+  [
+    #definition("Uniform")[
+      $ f(x|a,b) = cases(1/(b-a) quad &"if a" <= x <= b,0 &"otherwise") $
+    ]<def-uniform>
+  ],
   definition("Exponential")[
     \
     $ f(x|lambda) = lambda e^(-lambda x) $
@@ -47,10 +57,12 @@ example()[
     - $alpha$ and $beta$ = shape parameters
     - B($dot$,$dot$) = beta function
   ],
-  definition("Normal")[
+  [
+  #definition("Normal")[
     $ f(x|mu,sigma) = (1/(sigma sqrt(2pi))) exp(-((x-mu)^2)/(2sigma^2)) $
     - mu = mean
     - sigma = standard deviation
+  ]<def-normal>
   ]
 )
 #let x = lq.linspace(0.001, 15)
@@ -68,12 +80,12 @@ example()[
  // Avoid 0 to prevent log errors
 
 // --- Uniform Distribution (0, 10)
-figure(
+[#figure(
   caption: "Uniform Distribution U(0, 10)",
   lq.diagram(
     lq.plot(x, x.map(v => if v >= 0 and v <= 10 { 0.1 } else { 0 }))
   )
-),
+)<plot:uniform>],
 
 // --- Exponential Distribution λ = 1 (approximate using built-in exp)
 figure(
@@ -155,3 +167,8 @@ They are diﬀerent in how they treat data and parameters: probabilities describ
   caption: "Probability vs. Likelihood"
 )<fig:probability_vs_likelihood>
 
+#pagebreak()
+== Maximum likelihood
+
+#image("../images/maxlikely1.png", width: 100%)
+#image("../images/maxlikely2.png", width: 100%)

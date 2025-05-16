@@ -1,6 +1,6 @@
 #import "@preview/dvdtyp:1.0.1": *
 
-= Least squares estimators
+= Least squares estimators (Lecture 3)
 
 Indtroductory definitions:
 

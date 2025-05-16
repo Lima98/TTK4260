@@ -1,6 +1,6 @@
 #import "@preview/dvdtyp:1.0.1": *
 
-= Principal Component Analysis (PCA) introduction
+= Principal Component Analysis (PCA) introduction (Lecture 2)
 
 PCA is the "mother" of all exploratory multivariate methods, below are some examples demonstrating the need/utility of the exploratory data analysis.
 

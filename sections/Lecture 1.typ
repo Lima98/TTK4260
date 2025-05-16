@@ -1,6 +1,6 @@
 #import "@preview/dvdtyp:1.0.1": *
 
-= Introductions and motivations
+= Introductions and motivations (Lecture 1)
 
 The overarching workflow for data analysis is seen below:
 
