@@ -35,5 +35,14 @@ Suppose a medical test for a rare disease has a false positive rate of 5% and a 
   - $P(not B| not A) = 0.95$
   - $P(A) = 0.001 $
 
+This gives us:
+  $ P(B) = P(B|A) dot P(A) + P(B|not A) dot P(not A) $
+  from:
+  $ P(A|B) = (P(B|A) dot P(A)) / P(B) $
 - Answer: $P(theta|not theta) = $  $1.9%$ ]
 
+== Important disctinction to keep always in mind
+
+- *LS* means "state the fitting problem as just a geometrical one"
+- *ML* means "add the assumption that there is an underlying probability distribution of the data" 
+- *MAP* means "moreover add also a weighting based on an underlying prior assumption on the distribution of the parameters"
