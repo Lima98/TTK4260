@@ -1,7 +1,5 @@
 #import "@preview/dvdtyp:1.0.1": *
 
-#let highlight = colors.at(4)
-
 #show: dvdtyp.with(
   title: "TTK4260",
   subtitle: [Multivariate data analysis and machine learning],
@@ -24,6 +22,8 @@
 #include "sections/Lecture 4.typ"
 // Maximum likelihood
 #include "sections/Lecture 5.typ"
+// Maximum a posteriori
+#include "sections/Lecture 6.typ"
 // Classification and discrimination, PCA and PLS-DA
 #include "sections/Lecture 22.typ"
 // SVM, LDA, logistic regression and tree-based methods

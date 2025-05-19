@@ -61,4 +61,4 @@ Most sensors are not measuring directly the inherent state or property of a syst
 - Selection bias (especially when tuning hyper-parameters)
 - Extending sample sets with simulated samples to e.g. handle skewed distributions, then split in training/test
 - Feature selection on all data, then split in training/test (see above)
-- #text(fill: red)[And what is not often mentioned: Random training/test when the samples must be stratified due to meta-information]
+- #text(fill: highlight, weight: 1000)[And what is not often mentioned: Random training/test when the samples must be stratified due to meta-information]
