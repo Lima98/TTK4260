@@ -34,6 +34,7 @@ Some desired characteristics in the modeling approach are:
   image("../images/variableinsystem.png", width: 60%),
   caption: "Variables in a system"
 )<fig:variableinsystem>
+
 #figure(
   placement: auto,
   image("/images/toolbox.png", width: 60%),

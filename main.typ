@@ -7,7 +7,8 @@
   accent: highlight,
   abstract: "Notes from exam preparation",
 )
-#show link: underline 
+
+#show link: underline
 #show link: set text(fill: highlight)
 
 #outline(depth: none)
@@ -27,7 +28,7 @@
 // How to visualize results
 #include "sections/Lecture 7.typ"
 // Basic statistics
-#include "sections/Lecture 8.typ" 
+#include "sections/Lecture 8.typ"
 // Bias vs variance tradeoff
 #include "sections/Lecture 9.typ"
 // PCA in depth
@@ -48,6 +49,6 @@
 #include "sections/Lecture 24.typ"
 // ANN/CNN
 #include "sections/Lecture 25.typ"
-
+// nvim test pushing
 
 #include "sections/QA-exam.typ"

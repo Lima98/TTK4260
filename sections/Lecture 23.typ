@@ -18,7 +18,7 @@ Used to classify (and also regression) that originates from machine learning. It
   image("../images/objective-pca.png", width: 90%),
 )
 
-== Tree based classifictaion models
+= Tree based classifictaion models
 
 === Decision trees
 
